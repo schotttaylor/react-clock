@@ -1,0 +1,69 @@
+.App {
+  background-color: #6E7359;
+  box-shadow: inset 0px 80px 400px 50px rgba(0, 0, 0, 0.35);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin); 
+  color: #222;
+}
+
+.clock {
+  height: 50vmin;
+  width: 50vmin;
+  border-radius: 50%;
+  position: absolute;
+  border: solid #222 2.5vmin;
+  box-shadow: 2px 15px 20px 5px rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clockFace {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: floralwhite;
+  border-radius: 50%;
+  box-shadow: inset 0.5vmin 2.1vmin 0.5vmin 0 rgba(0, 0, 0, 0.35);
+}
+.faceGradient {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: inset -4vmin -7vmin 20vmin 5vmin rgba(100, 80, 0, 0.4);
+}
+.faceRingInner {
+  height: 56%;
+  width: 56%;
+  position: absolute;
+  border-radius: 50%;
+  border: 0.1vmin solid #906500;
+  box-shadow: inset 0 0 0 50vmin rgba(100, 80, 0, 0.1);
+}
+.faceRingInnerDouble {
+  height: 58%;
+  width: 58%;
+  position: absolute;
+  border-radius: 50%;
+  border: 0.1vmin solid #906500;
+}
+.faceRingOuter {
+  height: 97.2%;
+  width: 97.2%;
+  position: absolute;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 0.3vmin solid #906500;
+}
+.title {
+  position: absolute;
+  text-align: center;
+  letter-spacing: 0.3vmin;
+  font-size: 2.5vmin;
+  transform: translate(0, -5.3vmin);
+}

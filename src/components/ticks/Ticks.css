@@ -1,0 +1,27 @@
+.ticks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tick {
+  width: 0.25vmin;
+  height: 100%;
+  position: absolute;
+}
+
+.tick div {
+  height: 2vmin;
+  width: 100%;
+  position: relative;
+  background-color: #906500;
+  transform: translate(0, 0.8vmin);
+}
+
+.tick:nth-child(5n+1) {
+  width: 0.4vmin;
+}
+
+.tick:nth-child(5n+1) div {
+  background-color: black;
+  height: 6%;
+}
