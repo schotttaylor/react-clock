@@ -14,7 +14,7 @@
   height: 87%;
   text-align: center;
   letter-spacing: 0.35vmin;
-  font-size: 85%;
+  font-size: 3.1vmin;
   font-weight: 600;
   text-transform: uppercase;
   background-color: #FFF;
@@ -28,7 +28,7 @@
 }
 .dateDisplay span {
   height: 100%;
-  line-height: 140%;
+  line-height: 4.5vmin;
 }
 .dateDisplay span:nth-child(2) {
   padding: 0 0.8vmin;
