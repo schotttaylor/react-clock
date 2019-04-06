@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Component, Fragment } from 'react';
 import './Face.css';
 
-class Face extends Component {
+export default class Face extends Component {
   render() {
     return (
       <Fragment>
@@ -18,4 +18,3 @@ class Face extends Component {
   }
 }
 
-export default Face;

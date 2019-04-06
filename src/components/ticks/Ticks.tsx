@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Component, Fragment } from 'react';
 import './Ticks.css';
 
-class Ticks extends Component {
+export default class Ticks extends Component {
 
   tickCount: number;
   ticks: number[];
@@ -43,5 +43,3 @@ class Ticks extends Component {
     );
   }
 }
-
-export default Ticks;

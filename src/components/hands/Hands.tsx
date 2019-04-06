@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Component, Fragment } from 'react';
 import './Hands.css';
 
-class Hands extends Component {
+export default class Hands extends Component {
 
   state = {
     hourHandPosition: '',
@@ -56,5 +56,3 @@ class Hands extends Component {
     );
   }
 }
-
-export default Hands;

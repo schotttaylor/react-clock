@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Component, Fragment } from 'react';
 import './Date.css';
 
-class DateDisplay extends Component {
+export default class DateDisplay extends Component {
 
   monthNames = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec'];
   time     = new Date();
@@ -25,4 +25,3 @@ class DateDisplay extends Component {
   }
 }
 
-export default DateDisplay;
