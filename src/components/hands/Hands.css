@@ -30,7 +30,7 @@
 
 .hands .second {
   z-index: 20;
-  width: 0.8vw;
+  width: 0.8vmin;
   border-left: 0.3vmin solid transparent;
   border-right: 0.3vmin solid transparent;
   border-bottom: 21.5vmin solid #990000;
