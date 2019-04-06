@@ -20,6 +20,8 @@
 .hands .hour {
   z-index: 10;
   border-bottom: 21vmin solid #000;
+  border-left: 0.7vmin solid transparent;
+  border-right: 0.7vmin solid transparent;
 }
 
 .hands .minute {

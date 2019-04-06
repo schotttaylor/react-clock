@@ -14,7 +14,7 @@ export default class Ticks extends Component {
   }
 
   rotateTick(index: number) {
-    return `rotate(${index}deg`;
+    return `rotate(${index}deg)`;
   }
 
   renderTicks() {
