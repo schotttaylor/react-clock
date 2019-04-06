@@ -7,44 +7,37 @@ class Hands extends Component {
   state = {
     hourHandPosition: '',
     minuteHandPosition: '',
-    secondHandPosition: '',
-    time: new Date
+    secondHandPosition: ''
   };
-
-  hourHandAngle   = ((this.state.time.getHours() % 12) + this.state.time.getMinutes() / 60) * 30;
-  minuteHandAngle = (this.state.time.getMinutes() + this.state.time.getSeconds() / 60) * 6;
-  secondHandAngle = (this.state.time.getSeconds() + this.state.time.getMilliseconds() / 1000) * 6;
-
-  clock: any = setInterval(this.clock, 1000);
   
   constructor(props: {}) {
     super(props);
-    this.state = {
-      hourHandPosition: `translate(0, -5vw) translateZ(1px) rotate(${this.hourHandAngle}deg`,
-      minuteHandPosition: `translate(0, -7vw) translateZ(1px) rotate(${this.minuteHandAngle}deg`,
-      secondHandPosition: `translate(0, -8.5vw) translateZ(1px) rotate(${this.secondHandAngle}deg`,
-      time: new Date()
-    };
-    this.timer = this.timer.bind(this);
+    this.runClock = this.runClock.bind(this);
   }
 
   componentDidMount() {
-    // this.timer();
-    setInterval(this.timer, 1000);
+    this.runClock()
   }
-  
-  timer() {
-    const time = new Date();
-    const hourHandAngle   = ((time.getHours() % 12) + time.getMinutes() / 60) * 30;
-    const minuteHandAngle = (time.getMinutes() + time.getSeconds() / 60) * 6;
-    const secondHandAngle = (time.getSeconds() + time.getMilliseconds() / 1000) * 6;
 
+  runClock() {
+    const now = new Date();
+    const hour = now.getHours() % 12;
+    const min  = now.getMinutes();
+    const sec  = now.getSeconds();
+    const ms   = now.getMilliseconds();
+  
+    const hourRotation = 30 * hour + (0.5 * min);
+    const minRotation = 6 * min + (0.1 * sec);
+    const secRotation = 6 * sec + 0.006 * ms;
+    
     this.setState({ 
-      hourHandPosition: `translate(0, -5vw) translateZ(1px) rotate(${hourHandAngle}deg`,
-      minuteHandPosition: `translate(0, -7vw) translateZ(1px) rotate(${minuteHandAngle}deg`,
-      secondHandPosition: `translate(0, -8.5vw) translateZ(1px) rotate(${secondHandAngle}deg`,
+      hourHandPosition: `translate(0, -6.75vmin) translateZ(1px) rotate(${ hourRotation }deg`,
+      minuteHandPosition: `translate(0, -9vmin) translateZ(2px) rotate(${ minRotation }deg`,
+      secondHandPosition: `translate(0, -10.75vmin) translateZ(3px) rotate(${ secRotation }deg`,
       time: new Date()
     })
+    
+    requestAnimationFrame(this.runClock)
   }
 
   render() {

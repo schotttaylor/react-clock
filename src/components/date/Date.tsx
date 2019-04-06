@@ -13,8 +13,8 @@ class DateDisplay extends Component {
   render() {
     return (
       <Fragment>
-        <div className="dateBorder">
-          <div className="date">
+        <div className="date">
+          <div className="dateDisplay">
             <span className="month">{this.monthVal}</span>
             <span className="day">{this.dayVal}</span>
             <span className="year">{this.yearVal}</span>

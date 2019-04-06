@@ -1,21 +1,13 @@
-.clock {
-  height: 50vmin;
-  width: 50vmin;
-  border-radius: 50%;
-  position: absolute;
-  border: solid #222 2.5vmin;
-  box-shadow: 2px 15px 20px 5px rgba(0, 0, 0, 0.35);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.clockFace {
+.face {
   height: 100%;
   width: 100%;
   position: absolute;
   background: floralwhite;
   border-radius: 50%;
   box-shadow: inset 0.5vmin 2.1vmin 0.5vmin 0 rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .faceGradient {
   height: 100%;
