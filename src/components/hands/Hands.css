@@ -63,6 +63,5 @@
   border-radius: 50%;
   background-color: #990000;
   position: absolute;
-  z-index: 20;
+  transform: translateZ(4px);
 }
-
