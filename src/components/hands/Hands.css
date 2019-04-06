@@ -10,30 +10,29 @@
 
 .hands .hand {
   position: absolute;
-  width: 1vmin;
-  box-sizing: border-box;
+  width: 0.4vmin;
+  box-sizing: content-box;
   transform-origin: bottom center;
-  border-left: 0.4vmin solid transparent;
-  border-right: 0.4vmin solid transparent;
+  border-left: 0.6vmin solid transparent;
+  border-right: 0.6vmin solid transparent;
 }
 
 .hands .hour {
   z-index: 10;
-  width: 1vmin;
-  border-bottom: 13.5vmin solid #000;
+  border-bottom: 21vmin solid #000;
 }
 
 .hands .minute {
   z-index: 20;
-  border-bottom: 18vmin solid #000;
+  border-bottom: 29.5vmin solid #000;
 }
 
 .hands .second {
   z-index: 30;
-  width: 0.8vmin;
-  border-left: 0.3vmin solid transparent;
-  border-right: 0.3vmin solid transparent;
-  border-bottom: 21.5vmin solid #990000;
+  width: 0.4vmin;
+  border-left: 0.4vmin solid transparent;
+  border-right: 0.4vmin solid transparent;
+  border-bottom: 33.5vmin solid #990000;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -41,9 +40,9 @@
 
 .hands .tail {
   width: 1.15vmin;
-  height: 6vmin;
+  height: 10vmin;
   position: absolute;
-  transform: translate(0, 25vmin);
+  transform: translate(0, 38vmin);
   background-color: #990000;
 }
 

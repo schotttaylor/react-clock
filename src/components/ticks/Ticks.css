@@ -14,7 +14,7 @@
   width: 100%;
   position: relative;
   background-color: #906500;
-  transform: translate(0, 0.8vmin);
+  transform: translate(0, 1vmin);
 }
 
 .tick:nth-child(5n+1) {

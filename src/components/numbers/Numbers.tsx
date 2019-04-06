@@ -11,7 +11,7 @@ export default class Numbers extends Component {
   }
 
   positionNumber(numb: number) {
-    return `translate(0, -16vmin) rotate(${numb * 30}deg`;
+    return `translate(0, -25vmin) rotate(${numb * 30}deg`;
   }
 
   render() {

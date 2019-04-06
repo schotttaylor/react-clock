@@ -9,8 +9,8 @@
   color: #222;
 }
 .clock {
-  height: 50vmin;
-  width: 50vmin;
+  height: 75vmin;
+  width: 75vmin;
   border-radius: 50%;
   position: absolute;
   border: solid #222 2.5vmin;

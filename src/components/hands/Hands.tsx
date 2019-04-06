@@ -31,9 +31,9 @@ export default class Hands extends Component {
     const secRotation = 6 * sec + 0.006 * ms;
     
     this.setState({ 
-      hourHandPosition: `translate(0, -6.75vmin) translateZ(1px) rotate(${ hourRotation }deg`,
-      minuteHandPosition: `translate(0, -9vmin) translateZ(2px) rotate(${ minRotation }deg`,
-      secondHandPosition: `translate(0, -10.75vmin) translateZ(3px) rotate(${ secRotation }deg`,
+      hourHandPosition: `translate(0, -10.5vmin) translateZ(1px) rotate(${ hourRotation }deg`,
+      minuteHandPosition: `translate(0, -14.75vmin) translateZ(2px) rotate(${ minRotation }deg`,
+      secondHandPosition: `translate(0, -16.75vmin) translateZ(3px) rotate(${ secRotation }deg`,
       time: new Date()
     })
     
