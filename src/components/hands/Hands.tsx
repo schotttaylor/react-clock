@@ -37,7 +37,7 @@ class Hands extends Component {
       time: new Date()
     })
     
-    requestAnimationFrame(this.runClock)
+    // requestAnimationFrame(this.runClock)
   }
 
   render() {
