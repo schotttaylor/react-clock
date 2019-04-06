@@ -9,8 +9,8 @@
   color: #222;
 }
 .clock {
-  height: 75vmin;
-  width: 75vmin;
+  height: 65vmin;
+  width: 65vmin;
   border-radius: 50%;
   position: absolute;
   border: solid #222 2.5vmin;
@@ -18,7 +18,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: translate(0, 8vmin);
+  transform: translate(0, 3vmin);
 }
 .site-title {
   font-family: 'Lobster Two', cursive;
