@@ -2,7 +2,7 @@
   height: 100%;
   width: 100%;
   position: absolute;
-  background: floralwhite;
+  background: snow;
   border-radius: 50%;
   box-shadow: inset 0.5vmin 2.1vmin 0.5vmin 0 rgba(0, 0, 0, 0.35);
   display: flex;
@@ -15,7 +15,7 @@
   position: absolute;
   background-color: transparent;
   border-radius: 50%;
-  box-shadow: inset -4vmin -7vmin 20vmin 5vmin rgba(100, 80, 0, 0.4);
+  box-shadow: inset -4vmin -5vmin 8vmin 2vmin rgba(150,150,150,.4);
 }
 .faceRingInner {
   height: 56%;
