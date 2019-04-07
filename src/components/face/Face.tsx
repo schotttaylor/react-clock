@@ -11,7 +11,7 @@ export default class Face extends Component {
             <div className="faceRingInner"/>
             <div className="faceRingInnerDouble"/>
             <div className="faceRingOuter"/>
-            <div className="title">Schott</div>
+            <div className="name">Schott</div>
           </div>
       </Fragment>
     );
