@@ -2,7 +2,7 @@
   height: 100%;
   width: 100%;
   position: absolute;
-  filter: drop-shadow(0.5vmin 1.1vmin 0.05vmin rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0.5vmin 1.1vmin 0.15vmin rgba(0, 0, 0, 0.25));
   display: flex;
   align-items: center;
   justify-content: center;
