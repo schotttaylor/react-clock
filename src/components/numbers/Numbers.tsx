@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Component, Fragment } from 'react';
+import { Component } from 'react';
 import './Numbers.css';
 
 
@@ -16,19 +16,17 @@ export default class Numbers extends Component {
 
   render() {
     return (
-      <Fragment>
-        <div className="numbers">
-          { this.numbers.map(
-            (numb) => (
-            <div key={numb} 
-                className={`number number-${numb}`} 
-                style={{transform: this.rotateNumber(numb)}}>
-              <div style={{transform: this.positionNumber(-numb)}}>{numb}</div>
-            </div>
-            )
-          )}
-        </div>
-      </Fragment>
+      <div className="numbers">
+        { this.numbers.map(
+          (numb) => (
+          <div key={numb} 
+              className={`number number-${numb}`} 
+              style={{transform: this.rotateNumber(numb)}}>
+            <div style={{transform: this.positionNumber(-numb)}}>{numb}</div>
+          </div>
+          )
+        )}
+      </div>
     );
   }
 }

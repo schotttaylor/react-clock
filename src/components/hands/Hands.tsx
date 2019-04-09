@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Component, Fragment } from 'react';
+import { Component } from 'react';
 import './Hands.css';
 
 export default class Hands extends Component {
@@ -42,17 +42,15 @@ export default class Hands extends Component {
 
   render() {
     return (
-      <Fragment>
-        <div className="hands">
-          <div className="hand hour" style={{transform: this.state.hourHandPosition}}/>
-          <div className="hand minute" style={{transform: this.state.minuteHandPosition}}/>
-          <div className="hand second" style={{transform: this.state.secondHandPosition}}>
-            <div className="tail"/>
-          </div>
-          <div className="minuteHub"/>
-          <div className="secondHub"/>
+      <div className="hands">
+        <div className="hand hour" style={{transform: this.state.hourHandPosition}}/>
+        <div className="hand minute" style={{transform: this.state.minuteHandPosition}}/>
+        <div className="hand second" style={{transform: this.state.secondHandPosition}}>
+          <div className="tail"/>
         </div>
-      </Fragment>
+        <div className="minuteHub"/>
+        <div className="secondHub"/>
+      </div>
     );
   }
 }

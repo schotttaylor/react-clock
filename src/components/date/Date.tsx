@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Component, Fragment } from 'react';
+import { Component } from 'react';
 import './Date.css';
 
 export default class DateDisplay extends Component {
@@ -35,15 +35,13 @@ export default class DateDisplay extends Component {
 
   render() {
     return (
-      <Fragment>
-        <div className="date">
-          <div className="dateDisplay">
-            <span className="month">{this.state.monthVal}</span>
-            <span className="day">{this.state.dayVal}</span>
-            <span className="year">{this.state.yearVal}</span>
-          </div>
+      <div className="date">
+        <div className="dateDisplay">
+          <span className="month">{this.state.monthVal}</span>
+          <span className="day">{this.state.dayVal}</span>
+          <span className="year">{this.state.yearVal}</span>
         </div>
-      </Fragment>
+      </div>
     );
   }
 }

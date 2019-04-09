@@ -1,8 +1,8 @@
 import * as React from 'react';
-import { Component, Fragment } from 'react';
+import { Component } from 'react';
 import './Ticks.css';
 
-export default class Ticks extends Component {
+ export default class Ticks extends Component {
 
   tickCount: number;
   ticks: number[];
@@ -27,19 +27,17 @@ export default class Ticks extends Component {
     this.renderTicks();
 
     return (
-      <Fragment>
-        <div className="ticks">
-          { this.ticks.map(
-            (tick, index) => (
-            <div key={index} 
-                className={`tick pos-${tick}`} 
-                style={{transform: this.rotateTick(tick)}}>
-              <div/>
-            </div>
-            )
-          )}
-        </div>
-      </Fragment>
+      <div className="ticks">
+        { this.ticks.map(
+          (tick, index) => (
+          <div key={index} 
+              className={`tick pos-${tick}`} 
+              style={{transform: this.rotateTick(tick)}}>
+            <div/>
+          </div>
+          )
+        )}
+      </div>
     );
   }
 }
