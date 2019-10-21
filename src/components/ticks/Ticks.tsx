@@ -1,43 +1,36 @@
-import * as React from 'react';
-import { Component } from 'react';
+import React, { FC, useState } from 'react';
 import './Ticks.css';
 
- export default class Ticks extends Component {
+const Ticks: FC = () => {
 
-  tickCount: number;
-  ticks: number[];
+  const [tickCount] = useState(72 * 5);
+  const [ticks] = useState<number[]>([]);
 
-  constructor(props: {}) {
-    super(props);
-    this.tickCount = 72 * 5;
-    this.ticks = [];
-  }
-
-  rotateTick(index: number) {
+  const rotateTick = (index: number) => {
     return `rotate(${index}deg)`;
   }
 
-  renderTicks() {
-    for (let i: number = 0; i < this.tickCount; i += 6) {
-      this.ticks.push(i);
+  const renderTicks = () => {
+    for (let i: number = 0; i < tickCount; i += 6) {
+      ticks.push(i);
     }
   }
 
-  render() {
-    this.renderTicks();
+  renderTicks();
 
-    return (
-      <div className="ticks">
-        { this.ticks.map(
-          (tick, index) => (
-          <div key={index} 
-              className={`tick pos-${tick}`} 
-              style={{transform: this.rotateTick(tick)}}>
-            <div/>
-          </div>
-          )
-        )}
-      </div>
-    );
-  }
+  return (
+    <div className="ticks">
+      { ticks.map(
+        (tick, index) => (
+        <div key={index} 
+            className={`tick pos-${tick}`} 
+            style={{transform: rotateTick(tick)}}>
+          <div/>
+        </div>
+        )
+      )}
+    </div>
+  );
 }
+
+export default Ticks;

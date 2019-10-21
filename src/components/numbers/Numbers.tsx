@@ -1,32 +1,30 @@
-import * as React from 'react';
-import { Component } from 'react';
+import React, { FC, useState } from 'react';
 import './Numbers.css';
 
+const Numbers: FC = () => {
 
-export default class Numbers extends Component {
-  numbers = [1,2,3,4,5,6,7,8,9,10,11,12];
+  const [numbers] = useState([1,2,3,4,5,6,7,8,9,10,11,12]);
   
-  rotateNumber(numb: number) {
-    return `rotate(${numb * 30}deg`;
-  }
+  const rotateNumber = (n: number) => {
+    return `rotate(${n * 30}deg`;
+  };
 
-  positionNumber(numb: number) {
-    return `translate(0, -21.5vmin) rotate(${numb * 30}deg)`;
-  }
+  const positionNumber = (n: number) => {
+    return `translate(0, -21.5vmin) rotate(${n * 30}deg)`;
+  };
 
-  render() {
-    return (
-      <div className="numbers">
-        { this.numbers.map(
-          (numb) => (
-          <div key={numb} 
-              className={`number number-${numb}`} 
-              style={{transform: this.rotateNumber(numb)}}>
-            <div style={{transform: this.positionNumber(-numb)}}>{numb}</div>
-          </div>
-          )
-        )}
-      </div>
-    );
-  }
+  return (
+    <div className="numbers">
+      { numbers.map((n) => (
+        <div key={n} 
+            className={`number number-${n}`} 
+            style={{transform: rotateNumber(n)}}>
+          <div style={{transform: positionNumber(-n)}}>{n}</div>
+        </div>
+        )
+      )}
+    </div>
+  );
 }
+
+export default Numbers;

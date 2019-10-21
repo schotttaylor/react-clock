@@ -1,5 +1,4 @@
-import * as React from 'react';
-import { Component } from 'react';
+import React, { FC } from 'react';
 import DateDisplay from '../date/Date';
 import Face from '../face/Face';
 import Hands from '../hands/Hands';
@@ -8,20 +7,18 @@ import Ticks from '../ticks/Ticks';
 import Title from '../title/Title';
 import './App.css';
 
-export default class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <Title/>
-        <div className="clock">
-          <Face />
-          <DateDisplay />
-          <Numbers />
-          <Ticks />
-          <Hands />
-        </div>
+export const App: FC = () => {
+  return (
+    <div className="App">
+      <Title/>
+      <div className="clock">
+        <Face />
+        <DateDisplay />
+        <Numbers />
+        <Ticks />
+        <Hands />
       </div>
-    );
-  }
+    </div>
+  );
 }
 

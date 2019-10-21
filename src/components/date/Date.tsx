@@ -1,48 +1,30 @@
-import * as React from 'react';
-import { Component } from 'react';
+import React, { useState, FC } from 'react';
 import './Date.css';
 
-export default class DateDisplay extends Component {
+const DateDisplay: FC = () => {
 
-  state = {
-    dayVal: '',
-    monthVal: '',
-    yearVal: ''
-  };
+  const now = new Date();
+  const monthNames = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec'];
 
-  monthNames = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec'];
+  const [dayVal, setDayVal] = useState();
+  const [monthVal, setMonthVal] = useState();
+  const [yearVal, setYearVal] = useState();
 
-  constructor(props: {}) {
-    super(props);
-    this.getDate = this.getDate.bind(this);
-  }
-
-  componentDidMount() {
-    this.getDate()
-  }
-
-  getDate() {
-    const now = new Date();
-    
-    this.setState({ 
-      dayVal   : ("0" + now.getDate()).slice(-2),
-      monthVal : this.monthNames[now.getMonth()],
-      yearVal  : now.getFullYear().toString().substr(2, 2),
-    })
-    
-    requestAnimationFrame(this.getDate)
-  }
-
-  render() {
-    return (
-      <div className="date">
-        <div className="dateDisplay">
-          <span className="month">{this.state.monthVal}</span>
-          <span className="day">{this.state.dayVal}</span>
-          <span className="year">{this.state.yearVal}</span>
-        </div>
+  setTimeout(() => { 
+    setDayVal(("0" + now.getDate()).slice(-2));
+    setMonthVal(monthNames[now.getMonth()]);
+    setYearVal(now.getFullYear().toString().substr(2, 2));
+  }, 100)
+  
+  return (
+    <div className="date">
+      <div className="dateDisplay">
+        <span className="month">{monthVal}</span>
+        <span className="day">{dayVal}</span>
+        <span className="year">{yearVal}</span>
       </div>
-    );
-  }
+    </div>
+  );
 }
+export default DateDisplay;
 
