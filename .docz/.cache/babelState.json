@@ -1,0 +1,121 @@
+{
+  "stages": {
+    "develop": {
+      "plugins": [
+        {
+          "name": "@babel/plugin-proposal-object-rest-spread",
+          "options": {}
+        },
+        {
+          "name": "babel-plugin-export-metadata",
+          "options": {
+            "root": "/Users/schott/projects/react-clock"
+          }
+        }
+      ],
+      "presets": [
+        {
+          "name": "/Users/schott/projects/react-clock/node_modules/@emotion/babel-preset-css-prop/dist/babel-preset-css-prop.cjs.js",
+          "options": {
+            "sourceMap": true,
+            "autoLabel": true,
+            "plugins": []
+          }
+        }
+      ],
+      "options": {
+        "cacheDirectory": true,
+        "sourceType": "unambiguous"
+      }
+    },
+    "develop-html": {
+      "plugins": [
+        {
+          "name": "@babel/plugin-proposal-object-rest-spread",
+          "options": {}
+        },
+        {
+          "name": "babel-plugin-export-metadata",
+          "options": {
+            "root": "/Users/schott/projects/react-clock"
+          }
+        }
+      ],
+      "presets": [
+        {
+          "name": "/Users/schott/projects/react-clock/node_modules/@emotion/babel-preset-css-prop/dist/babel-preset-css-prop.cjs.js",
+          "options": {
+            "sourceMap": true,
+            "autoLabel": true,
+            "plugins": []
+          }
+        }
+      ],
+      "options": {
+        "cacheDirectory": true,
+        "sourceType": "unambiguous"
+      }
+    },
+    "build-html": {
+      "plugins": [
+        {
+          "name": "@babel/plugin-proposal-object-rest-spread",
+          "options": {}
+        },
+        {
+          "name": "babel-plugin-export-metadata",
+          "options": {
+            "root": "/Users/schott/projects/react-clock"
+          }
+        }
+      ],
+      "presets": [
+        {
+          "name": "/Users/schott/projects/react-clock/node_modules/@emotion/babel-preset-css-prop/dist/babel-preset-css-prop.cjs.js",
+          "options": {
+            "sourceMap": true,
+            "autoLabel": true,
+            "plugins": []
+          }
+        }
+      ],
+      "options": {
+        "cacheDirectory": true,
+        "sourceType": "unambiguous"
+      }
+    },
+    "build-javascript": {
+      "plugins": [
+        {
+          "name": "@babel/plugin-proposal-object-rest-spread",
+          "options": {}
+        },
+        {
+          "name": "babel-plugin-export-metadata",
+          "options": {
+            "root": "/Users/schott/projects/react-clock"
+          }
+        }
+      ],
+      "presets": [
+        {
+          "name": "/Users/schott/projects/react-clock/node_modules/@emotion/babel-preset-css-prop/dist/babel-preset-css-prop.cjs.js",
+          "options": {
+            "sourceMap": true,
+            "autoLabel": true,
+            "plugins": []
+          }
+        }
+      ],
+      "options": {
+        "cacheDirectory": true,
+        "sourceType": "unambiguous"
+      }
+    }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

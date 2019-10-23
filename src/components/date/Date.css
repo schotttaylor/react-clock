@@ -8,6 +8,7 @@
   position: absolute;
   border: 0.1vmin solid #906500;
   border-radius: 1.2vmin;
+  user-select: none;
 }
 .dateDisplay {
   width: 97%;
