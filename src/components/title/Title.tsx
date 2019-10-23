@@ -1,7 +1,7 @@
 import React, { FC, useState } from 'react';
-import './Title.css';
+import './title.css';
 
-const Title: FC = () => {
+export const Title: FC = () => {
   const [siteTitle] = useState('React Clock');
   const [siteTitleRotations] = useState([-25,-19,-13.5,-8,-4,0,5,10.5,15,20,25.5]);
 
@@ -20,5 +20,3 @@ const Title: FC = () => {
     </div>
   );
 }
-
-export default Title;

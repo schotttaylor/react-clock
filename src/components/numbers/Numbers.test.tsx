@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import Numbers from './Numbers';
+import { Numbers } from './numbers';
 
 
 it('renders without crashing', () => {

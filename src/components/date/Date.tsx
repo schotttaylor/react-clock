@@ -1,7 +1,7 @@
 import React, { useState, FC } from 'react';
-import './Date.css';
+import './date.css';
 
-const DateDisplay: FC = () => {
+export const DateDisplay: FC = () => {
 
   const now = new Date();
   const monthNames = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec'];
@@ -26,5 +26,4 @@ const DateDisplay: FC = () => {
     </div>
   );
 }
-export default DateDisplay;
 

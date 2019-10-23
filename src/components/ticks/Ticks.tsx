@@ -1,7 +1,7 @@
 import React, { FC, useState } from 'react';
-import './Ticks.css';
+import './ticks.css';
 
-const Ticks: FC = () => {
+export const Ticks: FC = () => {
 
   const [tickCount] = useState(72 * 5);
   const [ticks] = useState<number[]>([]);
@@ -32,5 +32,3 @@ const Ticks: FC = () => {
     </div>
   );
 }
-
-export default Ticks;

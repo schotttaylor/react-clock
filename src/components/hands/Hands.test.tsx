@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import Hands from './Hands';
+import { Hands } from './hands';
 
 
 it('renders without crashing', () => {

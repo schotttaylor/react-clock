@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
-import './Face.css';
+import './face.css';
 
-const Face: FC = () => {
+export const Face: FC = () => {
   return (
     <div className="face">
       <div className="faceGradient"/>
@@ -12,5 +12,4 @@ const Face: FC = () => {
     </div>
   );
 }
-export default Face;
 

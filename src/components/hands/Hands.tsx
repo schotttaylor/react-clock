@@ -1,8 +1,8 @@
 
 import React, { useState, FC } from 'react';
-import './Hands.css';
+import './hands.css';
 
-const Hands: FC = () => {
+export const Hands: FC = () => {
 
   const [hourHandPosition, setHourHandPosition] = useState();
   const [minuteHandPosition, setMinuteHandPosition] = useState();
@@ -43,5 +43,3 @@ const Hands: FC = () => {
     </div>
   ); 
 }
-
-export default Hands;

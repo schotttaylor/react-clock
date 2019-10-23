@@ -1,9 +1,9 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import Date from './Date';
+import { DateDisplay } from './date';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
-  ReactDOM.render(<Date />, div);
+  ReactDOM.render(<DateDisplay />, div);
   ReactDOM.unmountComponentAtNode(div);
 });

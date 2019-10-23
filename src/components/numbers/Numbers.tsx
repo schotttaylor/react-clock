@@ -1,7 +1,7 @@
 import React, { FC, useState } from 'react';
-import './Numbers.css';
+import './numbers.css';
 
-const Numbers: FC = () => {
+export const Numbers: FC = () => {
 
   const [numbers] = useState([1,2,3,4,5,6,7,8,9,10,11,12]);
   
@@ -26,5 +26,3 @@ const Numbers: FC = () => {
     </div>
   );
 }
-
-export default Numbers;
