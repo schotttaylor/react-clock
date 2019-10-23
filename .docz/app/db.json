@@ -103,6 +103,26 @@
           }
         ]
       }
+    },
+    {
+      "key": "src/components/numbers/numbers.mdx",
+      "value": {
+        "name": "Numbers",
+        "id": "076a6bea1c53c27fad7353b79d622436",
+        "filepath": "src/components/numbers/numbers.mdx",
+        "fullpath": "/Users/schott/projects/react-clock/src/components/numbers/numbers.mdx",
+        "link": "",
+        "slug": "src-components-numbers-numbers",
+        "route": "/src-components-numbers-numbers",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "this-is-the-numbers-component",
+            "depth": 1,
+            "value": "This is the Numbers Component"
+          }
+        ]
+      }
     }
   ],
   "props": []

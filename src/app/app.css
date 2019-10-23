@@ -1,0 +1,22 @@
+.App {
+  background-color: #6E7359;
+  box-shadow: inset 0px 80px 400px 50px rgba(0, 0, 0, 0.35);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin); 
+  color: #222;
+}
+.clock {
+  height: 65vmin;
+  width: 65vmin;
+  border-radius: 50%;
+  position: absolute;
+  border: solid #222 2.5vmin;
+  box-shadow: 2px 15px 20px 5px rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(0, 3vmin);
+}
