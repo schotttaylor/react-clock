@@ -6,6 +6,7 @@ import { Hands } from 'src/components/hands';
 import { Numbers } from 'src/components/numbers';
 import { Ticks } from 'src/components/ticks';
 import { Title } from 'src/components/title';
+import { SpotLight } from 'src/components/spot-light';
 
 export const App: FC = () => {
   return (
@@ -18,6 +19,7 @@ export const App: FC = () => {
         <Ticks />
         <Hands />
       </div>
+      <SpotLight />
     </div>
   );
 }
