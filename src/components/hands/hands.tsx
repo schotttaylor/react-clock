@@ -4,9 +4,9 @@ import './hands.css';
 
 export const Hands: FC = () => {
 
-  const [hourHandPosition, setHourHandPosition] = useState();
-  const [minuteHandPosition, setMinuteHandPosition] = useState();
-  const [secondHandPosition, setSecondHandPosition] = useState();
+  const [hourHandPosition, setHourHandPosition] = useState('');
+  const [minuteHandPosition, setMinuteHandPosition] = useState('');
+  const [secondHandPosition, setSecondHandPosition] = useState('');
 
   const now = new Date();
 
