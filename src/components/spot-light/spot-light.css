@@ -1,12 +1,18 @@
 .spot-light {
   position: absolute;
-  height: 200%;
+  height: 95%;
   width: 80%;
-  top: 10%;
+  top: 5%;
   filter: blur(50px);
   border-radius: 50%;
   z-index: 1;
   user-select: none;
-  background: linear-gradient(to bottom, rgba(82,82,61,1) 0%,rgba(82,82,61,0) 60%);
+  background: linear-gradient(to bottom, rgba(82,82,61,0.8) 0%,rgba(82,82,61,0) 100%);
 
+}
+@media screen and (orientation:landscape) {
+  .spot-light {
+    width: 60%;
+  
+  }
 }

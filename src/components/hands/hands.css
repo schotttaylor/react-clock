@@ -26,7 +26,7 @@
 
 .hands .minute {
   z-index: 20;
-  border-bottom: 25vmin solid rgb(24, 63, 126);
+  border-bottom: 25vmin solid #000;
 }
 
 .hands .second {
