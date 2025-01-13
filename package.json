@@ -2,6 +2,7 @@
   "name": "react-clock-2.0",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://schotttaylor.github.io/react-clock",
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "cra-template-typescript": "1.2.0",
