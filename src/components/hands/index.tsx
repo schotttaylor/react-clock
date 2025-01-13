@@ -1,9 +1,8 @@
 
-import React, { useState, FC } from 'react';
+import { useState, FC } from 'react';
 import './hands.css';
 
 export const Hands: FC = () => {
-
   const [hourHandPosition, setHourHandPosition] = useState('');
   const [minuteHandPosition, setMinuteHandPosition] = useState('');
   const [secondHandPosition, setSecondHandPosition] = useState('');
@@ -29,7 +28,7 @@ export const Hands: FC = () => {
 
   setTimeout(() => {
     runClock()
-  },0);
+  },27);
 
   return (
     <div className="hands">
