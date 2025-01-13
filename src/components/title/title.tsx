@@ -2,8 +2,8 @@ import React, { FC, useState } from 'react';
 import './title.css';
 
 export const Title: FC = () => {
-  const [siteTitle] = useState('React Clock');
-  const [siteTitleRotations] = useState([-25,-19,-13.5,-8,-4,0,5,10.5,15,20,25.5]);
+  const [siteTitle] = useState('React Analog');
+  const [siteTitleRotations] = useState([-20,-15.7,-11.7,-7.8,-5,0,4,8.7,13.2,16.5,19.7,23.7]);
 
   const rotation = (index: number) => {
     return `rotate(${ siteTitleRotations[index] }deg)`;
